@@ -13,14 +13,14 @@ function search() {
 
   ville = input.value;
   src =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "httpsg://api.openweathermap.org/data/2.5/weather?q=" +
     ville +
     "&units=metric&appid=2e8ba540e521c43064ae0eae3389589b";
 
   $.getJSON(src, function(data) {
     console.log(data);
     let icon =
-      "http://api.openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+      "https://api.openweathermap.org/img/w/" + data.weather[0].icon + ".png";
     let temperature = data.main.temp;
     let location = data.name;
     let humidity = data.main.humidity;
