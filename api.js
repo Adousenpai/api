@@ -13,7 +13,7 @@ function search() {
 
   ville = input.value;
   src =
-    "httpsg://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     ville +
     "&units=metric&appid=2e8ba540e521c43064ae0eae3389589b";
 
