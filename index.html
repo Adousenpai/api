@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <title>weather</title>
+  </head>
+  <body>
+    <header>
+      <h2>Entrez votre ville</h2>
+      <div class="topnav">
+        <div class="search-container">
+          <form action=""></form>
+            <input
+              id="input"
+              type="text"
+              placeholder="Search.."
+              name="search"
+            />
+            <button onclick="search()" id="btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="ville">
+            <h3 id="ville"></h3>
+          </div>
+
+        <div class="temperature">
+            <h3 class="temper"></h3>
+            <img class="icon" />    
+          </div>
+
+      <div class="trait"></div>
+
+      <div class="temp">
+        <h3></h3>
+      </div>
+
+      <div class="trait"></div>
+
+      <div class="humidity">
+        <h3></h3>
+        <h3 id="valeur"></h3>
+      </div>
+
+      
+
+     
+
+        
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </body>
+</html>
